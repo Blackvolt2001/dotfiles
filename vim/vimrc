@@ -1,0 +1,106 @@
+
+"This is a minimalist .vimrc setup and ofcourse feel free to Tweak it according to your own needs :)
+
+"=============================================
+"General Settings
+"=============================================
+
+
+
+"Setting compatibility to vim only
+set nocompatible
+
+"Enabling syntax highlighting
+syntax on
+
+"show line number
+set number
+
+"Show the status bar at all times
+set laststatus=2
+
+"Status Bar configuration
+set statusline=%F\ %y%m%r%=%l:%c\ %p%%
+
+"Automatically wraps text extending beyond screen
+set wrap
+
+"Highlights search
+set hlsearch
+
+"Shows letters incrementally as search term is typed
+set incsearch
+
+"Ignoring cases while searching,unless typed a capital letter
+set ignorecase
+set smartcase
+
+"show current mode at the bottom of the screen
+set showmode
+
+"show command being typed at the bottom of the screen
+set showcmd
+
+"Shows matching words during a search
+set showmatch
+
+"Setting relative number
+set relativenumber
+
+"Enabling filetype detection
+filetype on 
+
+"Enabling smart indentation
+set smartindent
+
+"Setting the command mode history
+set history=1000
+
+"set shift width to 4 spaces
+set shiftwidth=4
+
+"set tab width to 4 columns
+set tabstop=4
+
+"Converts tab character into spaces when u type the tab key
+set expandtab
+
+"Enabling mouse support
+set mouse=a
+
+"Sets a GUI menu when searching in command mode and hitting tab
+set wildmenu
+
+"Command-line completion behavior
+set wildmode=list:longest,list,full
+
+"Allowing Vim to use the System Keyboard
+set clipboard=unnamedplus
+
+"=============================================
+"KEY MAPPINGS
+"=============================================
+
+
+
+"Auto braces and other pair completion in insert mode
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+
+
+"=============================================
+"APPEARANCE
+"=============================================
+"set background=dark
+"colorscheme [theme_name]
+set termguicolors
+let g:colors_name = "default"
+hi LineNr ctermfg=244 guifg=#5c6370
+hi SignColumn ctermbg=NONE guibg=NONE
+
